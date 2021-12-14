@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Singular Pal</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js"></script>
+    <script>loadData();</script>
+</head>
+<body>
+<script>loadHeader();</script>
+
+<h2>Total cases <script>document.write(data.cases.filter(value => !value.isDeleted).length.toString())</script></h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+    </tr>
+    <script>
+        data.cases.forEach(element => {
+            if (!element.isDeleted) {
+                document.write("<tr><td>" + element.name + "</td></tr>");
+            }
+        });
+    </script>
+</table>
+
+<script>loadFooter();</script>
+</body>
+</html>

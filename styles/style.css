@@ -1,0 +1,46 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background: darkslategray;
+    color: white;
+    text-align: center;
+
+}
+
+input {
+    border-radius: 13px;
+    padding: 3px;
+}
+
+button {
+    background-color: white;
+    border-radius: 13px;
+}
+button:hover {
+    cursor: pointer;
+}
+
+header, footer {
+    text-align: center;
+    font-weight: bolder;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: white;
+    text-decoration: none;
+}
+
+table {
+    background-color: slategray;
+    border-radius: 13px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+th, td {
+    border: 3px solid darkslategray;
+    padding: 13px;
+}
+
+img {
+    border-radius: 3.33%;
+}

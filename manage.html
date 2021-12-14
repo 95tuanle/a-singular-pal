@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Singular Pal - Manage</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js"></script>
+    <script>loadData();</script>
+</head>
+<body>
+<script>loadHeader();</script>
+<h2>Total undeleted cases <script>document.write(data.cases.filter(value => !value.isDeleted).length.toString())</script></h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>State</th>
+        <th></th>
+    </tr>
+    <script>
+        data.cases.forEach(element => {
+            document.write("<tr><td>" + element.id + "</td><td>" + element.name + "</td><td>")
+            if (element.isDeleted) {
+                document.write("Deleted</td><td></td>");
+            } else {
+                document.write("<button onclick='deleteCase(" + element.id + ")'>Delete</button></td><td><a href='update.html#" + element.id + "'>Update</a>");
+            }
+            document.write("</td></tr>");
+        });
+    </script>
+</table>
+<script>loadFooter();</script>
+</body>
+</html>
