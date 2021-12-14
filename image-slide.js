@@ -4,7 +4,7 @@ $(document).ready(function() {
 		$("#image-container").fadeOut(function() {
 			if ($("#image-container").attr("src") === "images/1.png") {
 				$("#image-container").attr("src", "images/2.png");
-				// $("#image-container").width('33.33%');
+				$("#image-container").width('23.33%');
 				if ($("#button").text() === "Hide Description") {
 					if ($("#image-container").attr("src") === "images/1.png") {
 						$("#description").html("Clean your hands");
@@ -16,7 +16,7 @@ $(document).ready(function() {
 				}
 			} else if ($("#image-container").attr("src") === "images/2.png") {
 				$("#image-container").attr("src", "images/3.png");
-				// $("#image-container").width('33.33%');
+				$("#image-container").width('23.33%');
 				if ($("#button").text() === "Hide Description") {
 					if ($("#image-container").attr("src") === "images/1.png") {
 						$("#description").html("Clean your hands");
@@ -28,7 +28,7 @@ $(document).ready(function() {
 				}
 			} else {
 				$("#image-container").attr("src", "images/1.png");
-				// $("#image-container").width('33.33%');
+				$("#image-container").width('23.33%');
 				if ($("#button").text() === "Hide Description") {
 					if ($("#image-container").attr("src") === "images/1.png") {
 						$("#description").html("Clean your hands");
@@ -40,7 +40,7 @@ $(document).ready(function() {
 				}
 			}
 		}).fadeIn();
-	}, 3600);
+	}, 3333);
 	$("#button").click(function() {
 		if ($("#button").text() === "Show Description") {
 			$("#button").html("Hide Description");

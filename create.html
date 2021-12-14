@@ -12,7 +12,10 @@
     <script>loadData();</script>
 </head>
 <body>
-<script>loadHeader();</script>
+<script>
+    loadHeader();
+    document.getElementById("create").style.background = "rgba(255, 255, 255, 0.33)";
+</script>
 <label for="name"></label><input type="text" id="name" placeholder="Name">
 <button onclick="create()">Submit new case</button>
 <p id="required"> </p>

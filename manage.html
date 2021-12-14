@@ -12,7 +12,10 @@
     <script>loadData();</script>
 </head>
 <body>
-<script>loadHeader();</script>
+<script>
+    loadHeader();
+    document.getElementById("manage").style.background = "rgba(255, 255, 255, 0.33)";
+</script>
 <h2>Total undeleted cases <script>document.write(data.cases.filter(value => !value.isDeleted).length.toString())</script></h2>
 <table>
     <tr>

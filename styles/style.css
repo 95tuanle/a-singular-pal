@@ -42,6 +42,7 @@ a:link, a:visited, a:hover, a:active {
 
 .menu {
     padding: 13px;
+    border-radius: 13px;
 }
 
 table {

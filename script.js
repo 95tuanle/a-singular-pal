@@ -1,4 +1,4 @@
-// localStorage.clear()
+localStorage.clear()
 let data;
 
 function populateDummyData() {
@@ -57,8 +57,10 @@ function loadData() {
 }
 
 function loadHeader() {
-    document.write('<header><a href="index.html"><h1><img src="images/random-logo.svg" alt=""> ' + document.title +
-        '</h1></a><a class="menu" href="create.html">Create</a><a class="menu" href="prevention.html">Prevention</a><a class="menu" href="manage.html">Manage</a></header><br>');
+    document.write('<header><a href="index.html"><h1><img src="images/random-logo.svg" alt="">  A Singular Pal</h1></a>' +
+        '<a id="create" class="menu" href="create.html">Create</a>' +
+        '<a id="prevention" class="menu" href="prevention.html">Prevention</a>' +
+        '<a id="manage" class="menu" href="manage.html">Manage</a></header><br>');
 }
 
 function loadFooter() {
