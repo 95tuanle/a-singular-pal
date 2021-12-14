@@ -58,9 +58,9 @@ function loadData() {
 
 function loadHeader() {
     document.write('<header><a href="index.html"><h1><img src="images/random-logo.svg" alt=""> ' + document.title +
-        '</h1></a><a href="create.html">Create</a> | <a href="manage.html">Manage</a> | <a href="prevention.html">Prevention</a></header>');
+        '</h1></a><a class="menu" href="create.html">Create</a><a class="menu" href="prevention.html">Prevention</a><a class="menu" href="manage.html">Manage</a></header><br>');
 }
 
 function loadFooter() {
-    document.write('<footer><p>'+ new Date().getFullYear() +' &copy; Nguyen Anh Tuan Le - N01414195</p></footer>');
+    document.write('<br><footer><p>'+ new Date().getFullYear() +' &copy; Nguyen Anh Tuan Le - N01414195</p></footer>');
 }

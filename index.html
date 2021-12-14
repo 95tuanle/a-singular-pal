@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#767676"
+          media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#767676"
+          media="(prefers-color-scheme: dark)">
     <title>A Singular Pal</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="script.js"></script>
@@ -9,9 +13,7 @@
 </head>
 <body>
 <script>loadHeader();</script>
-
 <h2>Total cases <script>document.write(data.cases.filter(value => !value.isDeleted).length.toString())</script></h2>
-
 <table>
     <tr>
         <th>Name</th>
@@ -24,7 +26,6 @@
         });
     </script>
 </table>
-
 <script>loadFooter();</script>
 </body>
 </html>

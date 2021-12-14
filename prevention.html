@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#767676"
+          media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#767676"
+          media="(prefers-color-scheme: dark)">
     <title>A Singular Pal - Prevention</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="jquery-3.6.0.js"></script>
@@ -9,11 +13,17 @@
     <script src="script.js"></script>
 </head>
 <body>
-<script>loadHeader();</script>
-<br>
-<button id="button">Show Description</button>
-<p id="description"></p>
-<img id="image-container" src="images/1.png" alt="">
-<script>loadFooter();</script>
+<div class="video-background">
+    <div class="video-foreground">
+        <iframe src="https://www.youtube-nocookie.com/embed/OxJpZtp2ItE?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1&loop=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<div id="content">
+    <script>loadHeader();</script>
+    <button id="button">Show Description</button>
+    <p id="description"></p>
+    <img id="image-container" src="images/1.png" alt="">
+    <script>loadFooter();</script>
+</div>
 </body>
 </html>

@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#767676"
+          media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#767676"
+          media="(prefers-color-scheme: dark)">
     <title>A Singular Pal - Update</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="script.js"></script>
@@ -9,7 +13,6 @@
 </head>
 <body>
 <script>loadHeader();</script>
-<br>
 <label for="name"></label><input type="text" id="name" placeholder="Name" value="">
 <button onclick="update(window.location.hash.substring(1))">Update</button>
 <p id="required"> </p>

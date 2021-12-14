@@ -1,22 +1,33 @@
 body {
     font-family: Helvetica, sans-serif;
-    background: darkslategray;
+    background-image: url("../images/background.jpg");
     color: white;
     text-align: center;
-
 }
 
 input {
+    border: none;
     border-radius: 13px;
-    padding: 3px;
+    padding: 13px;
 }
 
 button {
-    background-color: white;
-    border-radius: 13px;
-}
-button:hover {
+    border: none;
+    background: rgba(255, 255, 255, 0.33);
+    color: white;
     cursor: pointer;
+    border-radius: 13px;
+    padding: 13px;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.63);
+    color: white;
+}
+
+button:active {
+    background: rgba(255, 255, 255, 0.83);
+    color: white;
 }
 
 header, footer {
@@ -29,18 +40,43 @@ a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
+.menu {
+    padding: 13px;
+}
+
 table {
-    background-color: slategray;
+    background: rgba(255, 255, 255, 0.33);
     border-radius: 13px;
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
 }
+
 th, td {
-    border: 3px solid darkslategray;
     padding: 13px;
 }
 
 img {
-    border-radius: 3.33%;
+    border-radius: 13%;
+}
+
+.video-background {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+    filter: blur(3px);
+}
+
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    top: -15%;
+    left: -15%;
+    width: 130%;
+    height: 130%;
+    pointer-events: none;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
