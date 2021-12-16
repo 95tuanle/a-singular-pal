@@ -68,8 +68,7 @@ img {
     filter: blur(13px);
 }
 
-.video-foreground,
-.video-background iframe {
+.video-foreground, .video-background iframe {
     position: absolute;
     top: -15%;
     left: -15%;
