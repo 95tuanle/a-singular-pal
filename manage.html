@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="theme-color" content="#767676"
-          media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#767676"
-          media="(prefers-color-scheme: dark)">
-    <title>A Singular Pal - Manage</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="images/random-logo.svg">
-    <link rel="apple-touch-icon" href="images/random-logo.svg">
-    <link rel="apple-touch-icon-precomposed" href="images/random-logo.svg">
-    <link rel="apple-touch-startup-image" href="images/random-logo.svg">
-    <script src="script.js"></script>
-    <script>loadData();</script>
+  <meta charset="UTF-8">
+  <meta content="#767676" media="(prefers-color-scheme: light)"
+        name="theme-color">
+  <meta content="#767676" media="(prefers-color-scheme: dark)"
+        name="theme-color">
+  <title>A Singular Pal - Manage</title>
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="images/random-logo.svg" rel="icon">
+  <link href="images/random-logo.svg" rel="apple-touch-icon">
+  <link href="images/random-logo.svg" rel="apple-touch-icon-precomposed">
+  <link href="images/random-logo.svg" rel="apple-touch-startup-image">
+  <script src="script.js"></script>
+  <script>loadData();</script>
 </head>
 <body>
 <script>
-    loadHeader();
-    document.getElementById("manage").style.background = "rgba(255, 255, 255, 0.33)";
+  loadHeader();
+  document.getElementById("manage").style.background = "rgba(255, 255, 255, 0.33)";
 </script>
-<h2>Total undeleted cases <script>document.write(data.cases.filter(value => !value.isDeleted).length.toString())</script></h2>
+<h2>Total undeleted cases
+  <script>document.write(data.cases.filter(value => !value.isDeleted).length.toString())</script>
+</h2>
 <table>
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>State</th>
-        <th></th>
-    </tr>
-    <script>
-        data.cases.forEach(element => {
-            document.write("<tr><td>" + element.id + "</td><td>" + element.name + "</td><td>")
-            if (element.isDeleted) {
-                document.write("Deleted</td><td></td>");
-            } else {
-                document.write("<button onclick='deleteCase(" + element.id + ")'>Delete</button></td><td><a href='update.html#" + element.id + "'>Update</a>");
-            }
-            document.write("</td></tr>");
-        });
-    </script>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>State</th>
+    <th></th>
+  </tr>
+  <script>
+    data.cases.forEach(element => {
+      document.write("<tr><td>" + element.id + "</td><td>" + element.name + "</td><td>")
+      if (element.isDeleted) {
+        document.write("Deleted</td><td></td>");
+      } else {
+        document.write("<button onclick='deleteCase(" + element.id + ")'>Delete</button></td><td><a href='update.html#" + element.id + "'>Update</a>");
+      }
+      document.write("</td></tr>");
+    });
+  </script>
 </table>
 <script>loadFooter();</script>
 </body>

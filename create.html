@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="theme-color" content="#767676"
-          media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#767676"
-          media="(prefers-color-scheme: dark)">
-    <title>A Singular Pal - Create</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="images/random-logo.svg">
-    <link rel="apple-touch-icon" href="images/random-logo.svg">
-    <link rel="apple-touch-icon-precomposed" href="images/random-logo.svg">
-    <link rel="apple-touch-startup-image" href="images/random-logo.svg">
-    <script src="script.js"></script>
-    <script>loadData();</script>
+  <meta charset="UTF-8">
+  <meta content="#767676" media="(prefers-color-scheme: light)"
+        name="theme-color">
+  <meta content="#767676" media="(prefers-color-scheme: dark)"
+        name="theme-color">
+  <title>A Singular Pal - Create</title>
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="images/random-logo.svg" rel="icon">
+  <link href="images/random-logo.svg" rel="apple-touch-icon">
+  <link href="images/random-logo.svg" rel="apple-touch-icon-precomposed">
+  <link href="images/random-logo.svg" rel="apple-touch-startup-image">
+  <script src="script.js"></script>
+  <script>loadData();</script>
 </head>
 <body>
 <script>
-    loadHeader();
-    document.getElementById("create").style.background = "rgba(255, 255, 255, 0.33)";
+  loadHeader();
+  document.getElementById("create").style.background = "rgba(255, 255, 255, 0.33)";
 </script>
-<label for="name"></label><input type="text" id="name" placeholder="Name">
+<label for="name"></label><input id="name" placeholder="Name" type="text">
 <button onclick="create()">Submit new case</button>
-<p id="required"> </p>
+<p id="required"></p>
 <script>loadFooter();</script>
 </body>
 </html>

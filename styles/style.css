@@ -1,82 +1,85 @@
 body {
-    font-family: Helvetica, sans-serif;
-    background-image: url("../images/background.jpg");
-    color: white;
-    text-align: center;
+  font-family: Helvetica, sans-serif;
+  background-image: url("../images/background.jpg");
+  color: white;
+  text-align: center;
 }
 
 input {
-    border: none;
-    border-radius: 13px;
-    padding: 13px;
+  border: none;
+  border-radius: 13px;
+  padding: 13px;
 }
 
 button {
-    border: none;
-    background: rgba(255, 255, 255, 0.33);
-    color: white;
-    cursor: pointer;
-    border-radius: 13px;
-    padding: 13px;
+  border: none;
+  background: rgba(255, 255, 255, 0.33);
+  color: white;
+  cursor: pointer;
+  border-radius: 13px;
+  padding: 13px;
 }
 
 button:hover {
-    background: rgba(255, 255, 255, 0.63);
-    color: white;
+  background: rgba(255, 255, 255, 0.63);
+  color: white;
 }
 
 button:active {
-    background: rgba(255, 255, 255, 0.83);
-    color: white;
+  background: rgba(255, 255, 255, 0.83);
+  color: white;
 }
 
 header, footer {
-    text-align: center;
-    font-weight: bolder;
+  text-align: center;
+  font-weight: bolder;
 }
 
 a:link, a:visited, a:hover, a:active {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .menu {
-    padding: 13px;
-    border-radius: 13px;
+  padding: 13px;
+  border-radius: 13px;
 }
 
 table {
-    background: rgba(255, 255, 255, 0.33);
-    border-radius: 13px;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
+  background: rgba(255, 255, 255, 0.33);
+  border-radius: 13px;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 th, td {
-    padding: 13px;
+  padding: 13px;
 }
 
 img {
-    border-radius: 13%;
+  border-radius: 13%;
 }
 
 .video-background {
-    position: fixed;
-    top: 0; right: 0; bottom: 0; left: 0;
-    z-index: -99;
-    filter: blur(13px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+  filter: blur(13px);
 }
 
 .video-foreground, .video-background iframe {
-    position: absolute;
-    top: -15%;
-    left: -15%;
-    width: 130%;
-    height: 130%;
-    pointer-events: none;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
+  position: absolute;
+  top: -15%;
+  left: -15%;
+  width: 130%;
+  height: 130%;
+  pointer-events: none;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
 }

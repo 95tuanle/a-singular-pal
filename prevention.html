@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="theme-color" content="#767676"
-          media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#767676"
-          media="(prefers-color-scheme: dark)">
-    <title>A Singular Pal - Prevention</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="images/random-logo.svg">
-    <link rel="apple-touch-icon" href="images/random-logo.svg">
-    <link rel="apple-touch-icon-precomposed" href="images/random-logo.svg">
-    <link rel="apple-touch-startup-image" href="images/random-logo.svg">
-    <script src="jquery-3.6.0.js"></script>
-    <script src="image-slide.js"></script>
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta content="#767676" media="(prefers-color-scheme: light)"
+        name="theme-color">
+  <meta content="#767676" media="(prefers-color-scheme: dark)"
+        name="theme-color">
+  <title>A Singular Pal - Prevention</title>
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="images/random-logo.svg" rel="icon">
+  <link href="images/random-logo.svg" rel="apple-touch-icon">
+  <link href="images/random-logo.svg" rel="apple-touch-icon-precomposed">
+  <link href="images/random-logo.svg" rel="apple-touch-startup-image">
+  <script src="https://code.jquery.com/jquery-4.0.0-beta.js"></script>
+  <script src="image-slide.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
 <div class="video-background">
-    <div class="video-foreground">
-        <iframe src="https://www.youtube-nocookie.com/embed/OxJpZtp2ItE?controls=0&autoplay=1&mute=1&playlist=OxJpZtp2ItE&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+  <div class="video-foreground">
+    <iframe
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      src="https://www.youtube.com/embed/TX9qSaGXFyg?si=d2qtR0VlHE_Wy1im?controls=0&autoplay=1&mute=1&loop=1"
+      style="border: none;"></iframe>
+  </div>
 </div>
 <div id="content">
-    <script>
-        loadHeader();
-        document.getElementById("prevention").style.background = "rgba(255, 255, 255, 0.33)";
-    </script>
-    <button id="button">Show Description</button>
-    <p id="description"></p>
-    <img id="image-container" src="images/1.png" alt="">
-    <script>loadFooter();</script>
+  <script>
+    loadHeader();
+    document.getElementById("prevention").style.background = "rgba(255, 255, 255, 0.33)";
+  </script>
+  <button id="button">Show Description</button>
+  <p id="description"></p>
+  <img alt="" id="image-container" src="images/1.png">
+  <script>loadFooter();</script>
 </div>
 </body>
 </html>
